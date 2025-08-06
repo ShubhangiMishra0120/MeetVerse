@@ -1,0 +1,283 @@
+body {
+  background: linear-gradient(135deg, #d1c4e9 0%, #b3c6ff 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin: 0;
+}
+
+.meetverse-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #d1c4e9 0%, #b3c6ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Navbar styles */
+.meetverse-navbar {
+  width: 100%;
+  background: #f7faff;
+  border-bottom: 2px solid #2575fc;
+  padding: 0 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(40, 80, 180, 0.07);
+  margin-bottom: 32px;
+}
+
+.meetverse-navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.meetverse-navbar li {
+  display: inline;
+}
+
+.meetverse-navbar {
+  width: 100vw;
+  background: #f7faff;
+  border-bottom: 2px solid #2575fc;
+  box-shadow: 0 2px 8px rgba(40, 80, 180, 0.07);
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.meetverse-navbar-content {
+  width: 90vw;
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.meetverse-logo {
+  color: #2575fc;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.meetverse-navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 48px;
+}
+
+.meetverse-navbar-links a {
+  text-decoration: none;
+  color: #2575fc;
+  font-weight: 700;
+  font-size: 1.2rem;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+  padding: 18px 0;
+}
+
+.meetverse-navbar-links a:hover {
+  color: #6a11cb;
+}
+
+.meetverse-navbar a:hover {
+  color: #6a11cb;
+}
+
+.meetverse-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.meetverse-row {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.meetverse-card {
+  width: 380px;
+  height: 280px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(40, 80, 180, 0.08);
+  padding: 24px 16px;
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-card {
+  width: 400px;
+  height: 500px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(40, 80, 180, 0.08);
+  padding: 32px 24px;
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.meetverse-chatbox {
+  width: 800px;
+  min-height: 320px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(40, 80, 180, 0.08);
+  padding: 24px 24px 16px 24px;
+  margin: 24px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Video element styles */
+.video-element {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: #eaf2ff;
+  border: 2px solid #b3c6ff;
+  object-fit: cover;
+  min-height: 200px;
+}
+
+.meetverse-card video {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  background: #eaf2ff;
+  border: 2px solid #b3c6ff;
+  object-fit: cover;
+}
+
+/* Connection status styles */
+.connection-status {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: #fff;
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(40, 80, 180, 0.1);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.connection-status span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .meetverse-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .meetverse-card {
+    width: 320px;
+    height: 240px;
+  }
+  
+  .meetverse-chatbox {
+    width: 90%;
+    min-width: 320px;
+  }
+  
+  .meetverse-navbar-content {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .meetverse-navbar-links {
+    margin-left: 0;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+.meetverse-chatbox textarea {
+  width: 90%;
+  min-height: 80px;
+  border-radius: 8px;
+  border: 2px solid #b3c6ff;
+  background: #eaf2ff;
+  margin-bottom: 12px;
+  padding: 8px;
+  resize: vertical;
+}
+
+.meetverse-chatbox button {
+  background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.meetverse-chatbox button:hover {
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+}
+
+input, textarea {
+  border: 1.5px solid #b3c6ff;
+  border-radius: 8px;
+  padding: 8px;
+  background: #eaf2ff;
+  color: #222;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input:focus, textarea:focus {
+  border: 1.5px solid #2575fc;
+}
+
+button {
+  background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(201, 205, 214, 0.08);
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+}
+
+h1, h2, h3 {
+  color: #2575fc;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
